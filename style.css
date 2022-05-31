@@ -33,10 +33,14 @@ body {
     line-height: 1;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 /*---------------------------*/
 .first {
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0, 0.8);
+    position: absolute; */
+    
 }
 .first img {
     height: 100%;
@@ -45,12 +49,12 @@ body {
     top: 0;
     left: 0;
     overflow: auto;
+    filter: brightness(20%);
 }
 .logo {
     position: relative;
     width: 30px;
     height: 30px;
-  
 }
 .first__titel{
     display: block;
@@ -58,8 +62,73 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     width: 750px;
-    top: 50%;
+    top: 40%;
     right: 0;
     left: 0;
     margin: auto;
 }
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 25px;
+
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+h1:after {
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 4px; /* Высота линии */
+    width: 0%;
+    margin: 0 auto;
+    margin-top: 25px;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+h1:hover:after,
+h1:focus:after {
+    width: 40%;
+}
+.first__titel p {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(210, 213, 215);
+}
+.first__titel span {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.first__titel button {
+    width: 190px;
+    height: 45px;
+    background-color: #c9362c;
+    margin: 30px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.first__titel button:hover{
+    background: #ffffff;
+    color: #c9362c;
+}
+.myphone {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    bottom: 5%;
+    left: 15%;
+    color: #ffffff;
+}
+.phone {
+    /* background-image:url(/img/phone-removebg-preview.png)center center/cover no-repeat;
+    content: "";
+    position: absolute;
+	left: 0;
+	top: 1px;
+	width: 18px;
+	height: 18px;
+} */
