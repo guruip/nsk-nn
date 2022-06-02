@@ -37,6 +37,7 @@ body {
     color: #ffffff;
 }
 /*---------------------------*/
+/*---first-Block-Begin---*/
 .first img {
     height: 100%;
     width: 100%;
@@ -133,3 +134,39 @@ h1:focus:after {
 	height: 18px;
 	background: url(/img/phone-removebg-preview.png) center center/cover no-repeat;
 }
+@media(max-width:770px) {
+    .first__titel{
+        width: 550px;
+        top: 30%;
+    }
+    .logo {
+        left: 5%;
+        top: 10px;
+    }
+    .myphone {
+        bottom: 5%;
+        left: 7%; 
+    }
+}
+@media(max-width:560px) {
+    .first__titel{
+        width: 400px;
+        top: 20%;
+    }
+    .first__titel button {
+        margin: 15px;
+    }
+}
+@media(max-width:410px) {
+    .first__titel{
+        width: 300px;
+        top: 20%;
+    }
+    .first__titel p {
+        line-height: 20px;
+    }
+    h1 {
+        padding-bottom: 0px;
+    }
+}
+/*---first-Block-End---*/
