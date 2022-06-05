@@ -53,7 +53,7 @@ body {
 }
 .logo {
     border-radius: 50%;
-    background-image: url(/img/logo.png);
+    background-image: url(img/logo.png);
     background-size: 120px 80px;
     position: relative;
     width: 120px;
@@ -136,7 +136,7 @@ h1:focus:after {
     bottom: 1px;
 	width: 18px;
 	height: 18px;
-	background: url(/img/phone-removebg-preview.png) center center/cover no-repeat;
+	background: url(img/phone-removebg-preview.png) center center/cover no-repeat;
 }
 @media(max-width:770px) {
     .first__titel{
