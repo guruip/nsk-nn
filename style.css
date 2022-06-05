@@ -38,6 +38,10 @@ body {
 }
 /*---------------------------*/
 /*---first-Block-Begin---*/
+.first {
+    padding: 1px;
+    margin: 1px;
+}
 .first img {
     height: 100%;
     width: 100%;
@@ -170,3 +174,15 @@ h1:focus:after {
     }
 }
 /*---first-Block-End---*/
+
+.blocktwo {
+    background-color: #f0f0f0;
+    display: flex;
+}
+.second {
+    
+}
+h2 {
+    color: #3c3c3c;
+    font-size: 15px;
+}
