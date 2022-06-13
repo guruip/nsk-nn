@@ -35,12 +35,14 @@ body {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+    display: block;
 }
 /*---------------------------*/
 /*---first-Block-Begin---*/
-.first {
-    padding: 1px;
-    margin: 1px;
+.main {
+    height: 100%;
+    width: 100%;
+    
 }
 .first img {
     height: 100%;
@@ -121,12 +123,12 @@ h1:focus:after {
     color: #c9362c;
 }
 .myphone {
-    display: flex;
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    color: #ffffff;
+    z-index: 5;
     bottom: 5%;
     left: 15%;
-    color: #ffffff;
+
     padding-left: 25px;
 }
 .myphone span {
@@ -148,7 +150,6 @@ h1:focus:after {
         top: 10px;
     }
     .myphone {
-        bottom: 5%;
         left: 7%; 
     }
 }
@@ -173,11 +174,20 @@ h1:focus:after {
         padding-bottom: 0px;
     }
 }
+@media(max-height:500px) and (max-width:620px){
+    .myphone {
+        top:46px;
+        left: 50%;
+        bottom:auto;
+    }
+}
 /*---first-Block-End---*/
 
 .blocktwo {
     background-color: #f0f0f0;
-    display: flex;
+    /* position:absolute; */
+    
+    
 }
 .second {
     
