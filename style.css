@@ -185,10 +185,13 @@ h1:focus:after {
 
 .blocktwo {
     background-color: #f0f0f0;
+    display: flex;
 }
 .second {
-    /* display: block; */
-    /* text-align: center; */
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 h2 {
     color: #3c3c3c;
@@ -198,7 +201,7 @@ h2 {
     padding-bottom: 25px;
         
 
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 1;
     text-decoration: none; /* Убираем подчеркивание */
     cursor: pointer;
@@ -221,13 +224,26 @@ h2:focus:after {
     width: 40%;
 }
 
+.table {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: flex-start;  
+    margin-bottom: 60px;
+}
+
 .shell {
     background-color: #ffffff;
     width: 350px;
     height: 250px;
     color: #3c3c3c;
     font-weight: bold;
-
+    margin: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .thename {
