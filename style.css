@@ -109,7 +109,7 @@ h1:focus:after {
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
-.first__titel button {
+button {
     width: 190px;
     height: 45px;
     background-color: #c9362c;
@@ -118,9 +118,10 @@ h1:focus:after {
     color: rgb(255, 255, 255);
     font-size: 15px;
 }
-.first__titel button:hover{
+button:hover{
     background: #ffffff;
     color: #c9362c;
+    border: 1px solid #c9362c ;
 }
 .myphone {
     position: absolute;
@@ -200,8 +201,6 @@ h2 {
     font-weight: bold;
     padding-bottom: 25px;
         
-
-    /* display: inline-block; */
     line-height: 1;
     text-decoration: none; /* Убираем подчеркивание */
     cursor: pointer;
@@ -221,7 +220,7 @@ h2:after {
 }
 h2:hover:after,
 h2:focus:after {
-    width: 40%;
+    width: 20%;
 }
 
 .table {
@@ -247,5 +246,252 @@ h2:focus:after {
 
 }
 .thename {
-    
+    padding-top: 30px;
 }
+
+/*---second-Block-End---*/
+
+.blockthree {
+    color: #fff;
+    font-weight: bold;
+
+    border-bottom: 10px solid transparent;
+    background-image:
+            linear-gradient(#122029, #122029),
+            linear-gradient(to bottom right, transparent 50.5%, #122029 50.5%),
+            linear-gradient(to bottom left, transparent 50.5%, #122029 50.5%),
+            linear-gradient(to top right, transparent 50.5%, #122029 50.5%),
+            linear-gradient(to top left, transparent 50.5%, #122029 50.5%);
+    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+    background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-clip: padding-box, border-box, border-box, border-box, border-box;
+    background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+.thrid {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.thrid h2 {
+    color: #fff;
+    padding-top: 80px ;
+}
+.list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: flex-start;  
+    margin-bottom: 20px;
+}
+.shelltwo {
+    height: 270px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    padding-top: 30px ;
+}
+/*---thrid-Block-End---*/
+.about {
+    padding: 90px;
+}
+.aboutme {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    color: #122029;    
+}
+.description {
+    margin-bottom: 50px;
+}
+.description p {
+    font-size: 16px;
+    line-height: 28px;
+}
+/*---fourth-Block-End---*/
+.wrap {
+    color: #122029;
+    background-color: #f0f0f0;
+}
+.portfolio {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1px 20px 0 20px;
+}
+.column {
+    display: block; 
+    max-width: 535px;
+    background-color: #ffffff;
+}
+.column ul {
+    display: flex;
+    padding: 10px;
+}
+.column li {
+    padding: 5px ;
+
+    position: relative;
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.column li:after {
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #c9362c; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.column li:hover:after,
+.column li:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: 20px;
+}
+.hover {
+    margin: 30px 30px 0 0;
+}
+.hover a {
+    display: inline-block;
+    background: #0033ff8c; 
+    line-height: 0;
+}
+.hover a img {
+    transition: filter 0.5s linear;
+    filter: brightness(0.5) grayscale(0.5) opacity(9);
+}
+.hover a:hover img {
+    filter: none;
+}
+@media(max-width:908px) {
+    .photo {
+        justify-content: center;
+    }
+}
+@media(max-width:620px) {
+    .column ul {
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        /* padding-top: 10px; */
+    }
+}
+/*---sixth-Block-End---*/
+/*-------slider-------*/
+.div {
+    text-align: center;
+}
+.wrapper{
+    max-width: 1200px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+	padding: 0 10px 30px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+@media (max-width:1066px){
+	.wrapper{padding: 50px 10px;}
+}
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+@media (max-width:1066px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px -15px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+    border: 1px solid #3c3c3c;
+	border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+    background-color: #3c3c3c;
+	border: 1px solid #3c3c3c;
+}
+.slider__item {
+	padding: 0px 15px;
+}
+.carousel {
+    display: flex;
+    color: #3c3c3c;
+    justify-content: center;
+}
+.rew {
+    background-color: #f0f0f0;
+    max-width: 740px;
+    max-height: 100%;
+    padding: 50px 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-style: italic;
+    line-height: 20px;
+    text-align :justify;
+} 
+.line {
+    border-bottom: 1px solid #858484;
+    margin: 15px;
+    height: 30px;
+}
+.just {
+    text-align :end;
+}
+/*---seventh-Block-End---*/
