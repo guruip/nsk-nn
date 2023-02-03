@@ -37,12 +37,14 @@ body {
     color: #ffffff;
     display: block;
 }
+textarea {
+    resize: none;
+}
 /*---------------------------*/
 /*---first-Block-Begin---*/
 .main {
     height: 100%;
     width: 100%;
-    
 }
 .first img {
     height: 100%;
@@ -51,7 +53,7 @@ body {
     top: 0;
     left: 0;
     overflow: auto;
-    filter: brightness(20%);
+    filter: brightness(20%); 
 }
 .logo {
     border-radius: 50%;
@@ -78,7 +80,6 @@ h1 {
     font-weight: bold;
     font-size: 30px;
     padding-bottom: 25px;
-
     display: inline-block;
     line-height: 1;
     text-decoration: none; /* Убираем подчеркивание */
@@ -129,7 +130,6 @@ button:hover{
     z-index: 5;
     bottom: 5%;
     left: 15%;
-
     padding-left: 25px;
 }
 .myphone span {
@@ -139,12 +139,14 @@ button:hover{
     bottom: 1px;
 	width: 18px;
 	height: 18px;
-	background: url(img/phone-removebg-preview.png) center center/cover no-repeat;
+	background: url(img/phone.png) center center/cover no-repeat;
 }
 @media(max-width:770px) {
     .first__titel{
         width: 550px;
-        top: 30%;
+    }
+    h1 {
+        padding-bottom: 0px;
     }
     .logo {
         left: 5%;
@@ -155,18 +157,23 @@ button:hover{
     }
 }
 @media(max-width:560px) {
+    h1 {
+        font-size: 25px;
+    }
     .first__titel{
         width: 400px;
-        top: 20%;
     }
     .first__titel button {
         margin: 15px;
+    }
+    .first__titel p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 @media(max-width:410px) {
     .first__titel{
         width: 300px;
-        top: 20%;
     }
     .first__titel p {
         line-height: 20px;
@@ -183,7 +190,6 @@ button:hover{
     }
 }
 /*---first-Block-End---*/
-
 .blocktwo {
     background-color: #f0f0f0;
     display: flex;
@@ -199,8 +205,7 @@ h2 {
     font-size: 25px;
     margin-top: 80px;
     font-weight: bold;
-    padding-bottom: 25px;
-        
+    padding-bottom: 25px;   
     line-height: 1;
     text-decoration: none; /* Убираем подчеркивание */
     cursor: pointer;
@@ -222,7 +227,6 @@ h2:hover:after,
 h2:focus:after {
     width: 20%;
 }
-
 .table {
     display: flex;
     flex-wrap:wrap;
@@ -230,7 +234,6 @@ h2:focus:after {
     align-content: flex-start;  
     margin-bottom: 60px;
 }
-
 .shell {
     background-color: #ffffff;
     width: 350px;
@@ -238,23 +241,28 @@ h2:focus:after {
     color: #3c3c3c;
     font-weight: bold;
     margin: 10px;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+}
+@media (max-width:400px) {
+    .table {  
+        margin-bottom: 10px;
+    }
+    .shell {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
 }
 .thename {
     padding-top: 30px;
 }
-
 /*---second-Block-End---*/
-
 .blockthree {
     color: #fff;
     font-weight: bold;
-
     border-bottom: 10px solid transparent;
     background-image:
             linear-gradient(#122029, #122029),
@@ -275,6 +283,7 @@ h2:focus:after {
     max-width: 1200px;
 }
 .thrid h2 {
+    margin: 0px;
     color: #fff;
     padding-top: 80px ;
 }
@@ -296,9 +305,15 @@ h2:focus:after {
 .name {
     padding-top: 30px ;
 }
+@media (max-width:540px) {
+    .shelltwo {
+        height: 200px;
+        width: 270px;
+    }
+}
 /*---thrid-Block-End---*/
 .about {
-    padding: 90px;
+    padding: 90px 10px;
 }
 .aboutme {
     display: block;
@@ -313,6 +328,23 @@ h2:focus:after {
 .description p {
     font-size: 16px;
     line-height: 28px;
+}
+@media (max-width:550px) {
+    .aboutus {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .about {
+        padding: 50px 10px 30px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .description p {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 /*---fourth-Block-End---*/
 .wrap {
@@ -337,7 +369,6 @@ h2:focus:after {
 }
 .column li {
     padding: 5px ;
-
     position: relative;
 	cursor: pointer;
 	line-height: 1; /*задаём высоту строки*/
@@ -409,7 +440,7 @@ h2:focus:after {
 	align-items: center;
 }
 @media (max-width:1066px){
-	.wrapper{padding: 50px 10px;}
+	.wrapper{padding: 0px;}
 }
 /* Слайдер */
 .slick-slider{
@@ -494,4 +525,167 @@ h2:focus:after {
 .just {
     text-align :end;
 }
+@media (max-width:510px){
+	.rew {
+        padding: 10px 15px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 16px;
+    } 
+}
 /*---seventh-Block-End---*/
+.back {
+    background-color: #122029;
+}
+/*------footer------*/
+.footered {
+    background-color: #122029; 
+    display: flex;
+    justify-content: center;
+}
+.conteiner{
+    margin-top: 45px;
+}
+.for {
+    clear:both; 
+    text-align:right;
+    color: white;
+}
+form input {
+    color: white;
+    font-size: 14px;
+	padding: 10px;
+    height: 45px;
+    width: 350px;
+	margin-bottom: 13px;
+	background-color: #1c2f3d;
+    margin-left: 35px;
+}
+textarea{
+	padding: 10px;
+    width: 350px;
+	background-color: #1c2f3d; 
+    margin-left: 35px;
+    font-size: 14px;
+    color: white;
+}
+.qwe{
+    vertical-align: top;
+}
+.for{
+    position: relative;
+    z-index: 5;
+}
+.for span {
+    content: "";
+    position: absolute;
+	left:-20px;
+    bottom: 25px;
+	width: 12px;
+	height: 18px;
+	background: url(img/point.png) center center/cover no-repeat;
+}
+.der span {
+    width: 18px;
+    left:5px;
+    bottom: 25px;
+    background: url(img/email.png) center center/cover no-repeat;
+}
+.dor span {
+    width: 14px;
+    left:33px;
+    bottom: 27px;
+    background: url(img/phone.png) center center/cover no-repeat;
+}
+.dir span {
+    width: 18px;
+    left:33px;
+    bottom: 177px;
+    background: url(img/phone.png) center center/cover no-repeat;
+}
+.contact {
+    display: flex;
+    position: relative;
+    top:-60px;
+    left:-200px;
+}
+.send {
+    margin-left: 200px;
+}
+.mydate a {
+    color: #c9362c;
+}
+.footer__logo .logo {
+    width: 75px;
+    height: 50px;
+    background-size: 70px auto;
+    top:-42%;
+    left: 0%;
+}
+@media (max-width:1000px){
+	.contact {
+        position:static;
+        padding-left: 70px; 
+    }
+}
+@media (max-width:640px){
+    form input {
+        width:230px;
+    }
+    textarea {
+        width: 230px;
+    }
+}
+@media (max-width:510px){
+    input, label{
+        display:block;
+        justify-content: center;
+        margin: 7px;
+    }
+    .for{   
+        text-align:center;
+        margin-bottom: 15px;
+    }
+    .conteiner {
+        max-width: 300px;
+    }
+    textarea {
+        margin: 0;
+    }
+    .date {
+        margin: 0 auto;
+    }
+    .for span {
+        left:35px;
+        bottom: 55px;
+    }
+    .der span {
+        left:40px;
+        bottom: 50px;
+    }
+    .dor span {
+        left:60px;
+        bottom: 50px;
+    }
+    .dir span {
+        left:60px;
+        bottom: 198px;
+    }
+    .send {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;  
+    }
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+ }
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+ }
+ ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+ }
+ :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    white;
+ }
