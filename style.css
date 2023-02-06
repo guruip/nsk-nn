@@ -141,7 +141,7 @@ button:hover{
 	height: 18px;
 	background: url(img/phone.png) center center/cover no-repeat;
 }
-@media(max-width:770px) {
+@media(max-width:850px) {
     .first__titel{
         width: 550px;
     }
@@ -367,6 +367,9 @@ h2:focus:after {
     display: flex;
     padding: 10px;
 }
+.column a {
+    color: #122029;
+}
 .column li {
     padding: 5px ;
     position: relative;
@@ -431,7 +434,7 @@ h2:focus:after {
 }
 .wrapper{
     max-width: 1200px;
-    display: block;
+    display: block; /* sddddddafsdfsd чета я тут начудил*/
     text-align: center;
     margin: 0 auto;
 	padding: 0 10px 30px;

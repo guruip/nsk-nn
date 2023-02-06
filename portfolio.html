@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" sizes="18x16" type="logo/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <title>Nsk-nn</title>
+    <link rel="stylesheet" href="styleportfolio.css">
+</head>
+<body>
+    <!---first-Block-Begin--->
+    <div class="main">
+        <div class="first">  
+            <img src="img/main.png" id="loggo" alt="каркасный дом" >
+            <a href="" class="header__logo"><div class="logo"></div></a>
+            <div class="first__titel">
+                <h1>Портфолио</h1>
+                <section class="gallery">
+                    
+                    <div class="gallery-list">
+                      <a href="imgGallery/photo8.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo8.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo1.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo1.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo2.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo2.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo3.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo3.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo4.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo4.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo5.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo5.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo6.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo6.jpg" alt="alt">
+                      </a>
+                      <a href="imgGallery/photo7.jpg" class="gallery-item">
+                        <div class="gallery-item-hover">Посмотреть</div>
+                        <img src="imgGallery/photo7.jpg" alt="alt">
+                      </a>
+                    </div>
+                  </section>
+            </div>
+            <button id="formscroll">Оставить заявку</button>
+        </div>
+        <a class="myphone" href=”tel:+79108974295”><span></span>+7 (910) 897-42-95</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: {
+             enabled: true
+        }
+    });
+    </script>
+</body>
+</html>
