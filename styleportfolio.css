@@ -68,6 +68,7 @@ body {
     text-align: center;
     right: 0;
     left: 0;
+    margin-top: 40px;
 }
 h1 {
     font-weight: bold;
@@ -89,34 +90,33 @@ h1:hover:after,
 h1:focus:after {
     width: 40%;
 }
-
 #formscroll {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
     width: 190px;
     height: 45px;
     background-color: #c9362c;
-    margin: 10px;
     border-radius: 4px;
     color: rgb(255, 255, 255);
     font-size: 15px;
-
-    position: fixed;
-    z-index: 6;
-    bottom: 5%;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+    
 } 
 #formscroll:hover{
     background: #ffffff;
     color: #c9362c;
     border: 1px solid #c9362c ;
 } 
+.blocposition {
+  display:flex;
+  margin: 0 auto;
+}
 .myphone {
-    position: fixed;
+    position: relative;
     color: #ffffff;
-    z-index: 5;
-    bottom: 7%;
-    left: 15%;
+    bottom: 20px;
+    margin: 0 auto;
     padding-left: 25px;
 }
 .myphone span {
@@ -128,6 +128,77 @@ h1:focus:after {
 	  height: 18px;
 	  background: url(img/phone.png) center center/cover no-repeat;
 }
+/*------------блок с навигацией------------*/
+.column {
+  display: flex;
+  justify-content: center; 
+  margin: 20px 10px 0px;
+}
+.column ul {
+  display: flex;
+  font-size: 20px;
+}
+.column a {
+    color: #ffffff;
+}
+.column li {
+  padding-right: 30px ;
+  position: relative;
+  cursor: pointer;
+  line-height: 1; /*задаём высоту строки*/
+  text-decoration: none; /*убираем подчёркивание*/
+}
+.column li:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;/*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #c9362c; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.column li:hover:after,
+.column li:focus:after {
+width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 20px;
+}
+.hover {
+  margin: 30px 30px 0 0;
+}
+.hover a {
+  display: inline-block;
+  background: #0033ff8c; 
+  line-height: 0;
+}
+.hover a img {
+  transition: filter 0.5s linear;
+  filter: brightness(0.5) grayscale(0.5) opacity(9);
+}
+.hover a:hover img {
+  filter: none;
+}
+@media(max-width:908px) {
+  .photo {
+      justify-content: center;
+  }
+}
+@media(max-width:620px) {
+  .column ul {
+      /* display: flex; */
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      /* padding-top: 10px; */
+  }
+}
+
 /*------------блок с фото------------*/
  section.gallery{
     position: relative;
@@ -157,6 +228,7 @@ h1:focus:after {
     overflow: hidden;
     font-size: 0;
     margin-top: 30px;
+
   }
   .gallery-item{
     display: block;
@@ -194,6 +266,10 @@ h1:focus:after {
   @media (max-width: 991px){
     .gallery-item{
       flex: 33.3%;
+    }
+    section.gallery{
+      position: relative;
+      padding: 10px 0;
     }
   }
   @media (max-width: 768px){

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" sizes="18x16" type="logo/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <title>Nsk-nn</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,12 +15,13 @@
         <div class="first">  
             <img src="img/main.png" id="loggo" alt="каркасный дом" >
             <a href="" class="header__logo"><div class="logo"></div></a>
-            <div class="first__titel">
-                <h1>Нижегородская строительная компания</h1>
-                <p><span>Мы предлогаем</span> обширный ряд строительных работ и услуг, таких как малоэтажное строительство, инженерно-монтажные работы, отделочные работы, комплекс санитарно-технических услуг, монтаж систем кондиционирования и вентиляционно-монтажные работы.</p>
-                <button id="formscroll">Оставить заявку</button>
-            </div>
         </div>
+        <div class="first__titel">
+            <h1>Нижегородская строительная компания</h1>
+            <p><span>Мы предлогаем</span> обширный ряд строительных работ и услуг, таких как малоэтажное строительство, инженерно-монтажные работы, отделочные работы, комплекс санитарно-технических услуг, монтаж систем кондиционирования и вентиляционно-монтажные работы.</p>
+        </div>
+        <div class="flex"><button class="button" id="formscroll">Оставить заявку</button>
+        </div>    
         <a class="myphone" href=”tel:+79108974295”><span></span>+7 (910) 897-42-95</a>
     </div>
     <!---first-Block-End--->
@@ -90,7 +92,7 @@
                </p>
             </div>
             <div class="aboutus">
-                <button id="aboutus">Подробнее о нас</button>
+                <button class="button" id="aboutus">Подробнее о нас</button>
             </div>
         </div>
     </div>
@@ -101,23 +103,52 @@
                 <div class="column">
                     <ul>
                         <li><a href="portfolio.html"><b>Все работы</b></a></li>
-                        <li>Коттеджи</li>
-                        <li>Бани</li>
-                        <li>Отделочные работы</li>
-                        <li>Коммуникации</li>
+                        <li><a href="cottages.html">Коттеджи</a></li>
+                        <li><a href="bath.html">Бани</a></li>
+                        <li><a href="cottages.html">Отделочные работы</a></li>
+                        <li><a href="communications.html">Коммуникации</a></li>
                     </ul>
                  </div>
                  <div class="photo">
-                    <div class="hover photo1"><a href="#"><img src="imgGallery/photo1.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo2"><a href="#"><img src="imgGallery/photo2.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo3"><a href="#"><img src="imgGallery/photo3.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo4"><a href="#"><img src="imgGallery/photo4.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo5"><a href="#"><img src="imgGallery/photo5.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo6"><a href="#"><img src="imgGallery/photo6.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo7"><a href="#"><img src="imgGallery/photo7.jpg" height="230" width="260"></a></div>
-                    <div class="hover photo8"><a href="#"><img src="imgGallery/photo8.jpg" height="230" width="260"></a></div>
+                    <section class="gallery">
+                    
+                        <div class="gallery-list">
+                          <a href="imgGallery/photo8.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo8.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo1.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo1.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo2.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo2.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo3.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo3.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo4.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo4.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo5.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo5.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo6.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo6.jpg" alt="alt" height="230" width="260">
+                          </a>
+                          <a href="imgGallery/photo7.jpg" class="gallery-item">
+                            <div class="gallery-item-hover">Посмотреть</div>
+                            <img src="imgGallery/photo7.jpg" alt="alt" height="230" width="260">
+                          </a>
+                        </div>
+                      </section>
                 </div>
-             <button>Больше работ</button>
+                <a href="portfolio.html"><button class="button">Больше работ</button></a>
         </div>
     </div>
     <!---sixth-Block-End--->
@@ -130,36 +161,36 @@
             <div class="slider__item filter">
                 <div class="carousel">
                     <div class="rew one">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis iure quisquam fuga laborum odio saepe aperiam? Libero dicta aperiam doloremque expedita voluptatibus veniam rem, nulla fugiat voluptates eius, amet vel sint voluptatum repellendus vero. Officiis ea error, quisquam velit labore.</p>
+                        <p>Не жалеем, что выбрали именно эту фирму. Все оформление велось дистанционно, что очень удобно. Проект был скорректирован Алексеем под наши пожелания. Цена вполне адекватная. Сроки строительства все выполнены. С бригадой во главе с Константином нам тоже очень повезло. Рекомендую однозначно.</p>
                         <div class="line"></div>
-                        <p class="just">Александр петрович, ООО <b>"Компания"</b></p>
+                        <p class="just">Александр Петрович, ООО <b>"Транс-Инкор"</b></p>
                     </div>
                 </div>
             </div>
             <div class="slider__item">
                 <div class="carousel">
                     <div class="rew one">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis iure quisquam fuga laborum odio saepe aperiam? Libero dicta aperiam doloremque expedita voluptatibus veniam rem, nulla fugiat voluptates eius, amet vel sint voluptatum repellendus vero. Officiis ea error, quisquam velit labore.</p>
+                        <p>Хочу выразить огромное спасибо ООО НСК-НН: Отдельное спасибо Евгению за слаженную работу, а так же бригаде мастеров Дмитрию и Николаю за качественное, аккуратное и быстрое строительство дома по проекту. Спасибо! Компании успехов и процветания!</p>
                         <div class="line"></div>
-                        <p class="just">Александр петрович, ООО <b>"Компания"</b></p>
+                        <p class="just">Андрей Николаевич</p>
                     </div>
                 </div>
             </div>
             <div class="slider__item filter">
                 <div class="carousel">
                     <div class="rew one">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis iure quisquam fuga laborum odio saepe aperiam? Libero dicta aperiam doloremque expedita voluptatibus veniam rem, nulla fugiat voluptates eius, amet vel sint voluptatum repellendus vero. Officiis ea error, quisquam velit labore.</p>
+                        <p>Очень понравилось сотрудничество с этой компанией – грамотные специалисты, точные предварительные расчеты стоимости услуг и строительных материалов, вежливая бригада. Мой заказ был выполнен точно в указанный в договоре срок, так что я довольна.</p>
                         <div class="line"></div>
-                        <p class="just">Александр петрович, ООО <b>"Компания"</b></p>
+                        <p class="just">Татьяна Владимировна</p>
                     </div>
                 </div>
             </div>
             <div class="slider__item">
                 <div class="carousel">
                     <div class="rew one">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis iure quisquam fuga laborum odio saepe aperiam? Libero dicta aperiam doloremque expedita voluptatibus veniam rem, nulla fugiat voluptates eius, amet vel sint voluptatum repellendus vero. Officiis ea error, quisquam velit labore.</p>
+                        <p>Заказала баню из бруса приехали 2 матера Олег и Тимур отличные мастера и ребята. Так профессионально построили. Где то нам советы давали.Мы очень довольны.Спасибо им большое за качественное построение бани.Всем рекомендую таких мастеров.Спасибо и фирме что прислали таких мастеров.</p>
                         <div class="line"></div>
-                        <p class="just">Александр петрович, ООО <b>"Компания"</b></p>
+                        <p class="just">Александр Евгеньевич, ООО <b>"ПриволжьеТранс"</b></p>
                     </div>
                 </div>
             </div>
@@ -179,15 +210,15 @@
                     <input class="date" type="number" class="forma" placeholder="Ваше телефон">
                     </div>
                     <div class="for dor">
-                    <label for="name"><span></span>+7 (910) 897-42-95</label>
+                    <label for="name"><span></span><a href=”tel:+79108974295”>+7 (910) 897-42-95</a></label>
                     <input class="date" type="email" class="forma" placeholder="Ваш email">
                     </div>
                     <div class="for dir">
-                    <label class="qwe" for="name"><span></span>+7 (920) 021-55-64</label>
+                    <label class="qwe" for="name"><span></span><a href=”tel:+79200215564”>+7 (920) 021-55-64</a></label>
                     <textarea class="date" cols="20" rows="10" placeholder="Коментарий"></textarea>
                     </div>
                     <div class="send">
-                    <button type="submit">Отправить</button>
+                    <button class="button" type="submit">Отправить</button>
                     </div>
                 </form>
                 <div class="contact">
@@ -199,6 +230,10 @@
     </footer>
      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
      <script src="js/slick.min.js"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+     <script src="js/gallery.js"></script>
      <script src="js/script.js"></script>
 </body>
 </html>
