@@ -200,25 +200,25 @@
     <footer class="footered">
         <div id="wrapeers" class="wrapeer">
             <div class="conteiner">
-                <form action="#" class="forma" >
+                <form action="sender.php" method="post" class="forma">
                     <div class="for dar">
                     <label for="name"><span></span>г.Нижний Новгород и обл.</label>
-                    <input class="date" type="text" class="forma" placeholder="Ваше имя">
+                    <input class="date forma" name="name" type="text" placeholder="Ваше имя">
                     </div>
                     <div class="for der">
                     <label for="name"><span></span>builder-pp@yandex.ru</label>
-                    <input class="date" type="number" class="forma" placeholder="Ваше телефон">
+                    <input class="date forma phone" name="phone" type="text" placeholder="Ваше телефон">
                     </div>
                     <div class="for dor">
                     <label for="name"><span></span><a href=”tel:+79108974295”>+7 (910) 897-42-95</a></label>
-                    <input class="date" type="email" class="forma" placeholder="Ваш email">
+                    <input class="date forma" type="email" name="email" placeholder="Ваш email">
                     </div>
                     <div class="for dir">
                     <label class="qwe" for="name"><span></span><a href=”tel:+79200215564”>+7 (920) 021-55-64</a></label>
-                    <textarea class="date" cols="20" rows="10" placeholder="Коментарий"></textarea>
+                    <textarea class="date" name="text" cols="20" rows="10" placeholder="Коментарий"></textarea>
                     </div>
                     <div class="send">
-                    <button class="button" type="submit">Отправить</button>
+                    <button type="button" class="button" >Отправить</button>
                     </div>
                 </form>
                 <div class="contact">
@@ -230,10 +230,10 @@
     </footer>
      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
      <script src="js/slick.min.js"></script>
-     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"></script> -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
      <script src="js/gallery.js"></script>
      <script src="js/script.js"></script>
+     <script src="js/jquery.maskedinput.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
 </body>
 </html>

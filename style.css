@@ -40,7 +40,6 @@ body {
 textarea {
     resize: none;
 }
-/*---------------------------*/
 /*---first-Block-Begin---*/
 .main {
     height: 100%;
@@ -416,14 +415,7 @@ h2:focus:after {
 }
 .column li:hover:after,
 .column li:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-/* .photo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    margin-bottom: 20px;
+	width: 100%;
 }
 /*------------блок с фото------------*/
 section.gallery{
@@ -454,7 +446,6 @@ h2.title:after{
     overflow: hidden;
     font-size: 0;
     margin-top: 30px;
-
   }
   .gallery-item{
     display: block;
@@ -526,11 +517,9 @@ h2.title:after{
 }
 @media(max-width:620px) {
     .column ul {
-        /* display: flex; */
         flex-wrap: wrap;
         justify-content: flex-start;
         align-content: flex-start;
-        /* padding-top: 10px; */
     }
 } 
 /*---sixth-Block-End---*/
@@ -707,14 +696,15 @@ textarea{
     bottom: 177px;
     background: url(img/phone.png) center center/cover no-repeat;
 }
+.send {
+    margin-left: 200px;
+}
 .contact {
     display: flex;
     position: relative;
+    max-width: 370px;
     top:-60px;
     left:-200px;
-}
-.send {
-    margin-left: 200px;
 }
 .forma a {
     color: #fff;
@@ -728,6 +718,12 @@ textarea{
     background-size: 70px auto;
     top:-42%;
     left: 0%;
+}
+form input.error {
+    box-shadow: 0 0 10px #c9362c;
+}
+label.error {
+    display: none!important;
 }
 @media (max-width:1000px){
 	.contact {
